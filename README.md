@@ -1,103 +1,67 @@
-# Library-Management-System
+# 📚 Library Management System (LMS)
 
-Hi!, welcome to my repository. The **Library Management System (LMS)** is developed for transforming manual offline workload into online automatic system. It contains all the main 
-features such as adding and managing students, books with efficiently maintaining their data. It also contains other security features such as **Captcha Verification** and 
-**Password Encryption**. This is a complete LMS with all the necessary functionalties. It also provides feature to **generate report** and **manage fine**.
+Welcome to my **Library Management System** project! This system is designed to convert manual, paper-based library operations into a more **efficient, web-based application**.
 
-Note: This is an extended version of Library Management System that can be found [here](https://phpgurukul.com/online-library-management-system/). I have added more advance functionalities like **report generation**.
+While I explored some open-source LMS projects for inspiration and learning, I have **significantly improved and extended the functionality** to better suit practical needs. The system supports managing books, students, and issuing records, and includes enhanced features like:
 
-# Getting Started
+- 🔐 Captcha Verification  
+- 🔒 Password Encryption  
+- 📊 Report Generation (including Overdue and User-wise reports)  
+- 💸 Fine Management  
+- 📦 Book Category & Publication Management  
+- 📁 Organized Admin & Student Dashboards  
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
+---
 
-## Prerequisites
+## 🚀 Features I Implemented / Enhanced
 
-It is good to have basic knowledge of HTML, CSS, PHP and MySQL to understand this project.
->We will use XAMP server as it has cross-platform support and we won't be needed to worry about the operating system support.
-Download and install suitable XAMP server from this link - https://www.apachefriends.org/download.html
+- Redesigned user flows and admin dashboard UI
+- Added **advanced reporting** features for overdue and user-based summaries
+- Improved the **book issue/return logic** to include real-time fine calculation
+- Included security features like **password hashing** and **captcha**
+- Set up proper **data validation and error handling** in forms
+- Optimized SQL queries and added relationships to improve efficiency
+- Worked on the **frontend styling** using HTML5 & CSS
+- Cleaned and documented the PHP backend logic for maintainability
 
-## Setting up the environment
+---
 
-- Download and extract project source code on your local machine.
-- Paste the source code in the htdocs folder. Default path will be here("C:\xampp\htdocs")
-- Open XAMP Control Panel and start Apache & MySQL service
-- Open your web browser and paste this link ("http://localhost/phpmyadmin/"). It should open database server page.
-- Create new empty database named library. Select the library database and import the SQL file given with the source code.
-- Review the config file from both of the includes folders. Change username and password accordingly.
-- Open your web browser and paste this link ("http://localhost/foldername-in-htdocs-directory/"). It should open login page.
-- Use any credentials from database to login. The password for all accounts is set to **Test@123**
+## 🛠 Getting Started (Local Setup)
 
-# Screenshots
+### Prerequisites
+- Basic understanding of PHP, MySQL, HTML/CSS
+- [XAMPP](https://www.apachefriends.org/download.html) (or any local server)
 
-![Login Page](Screenshots/Login.png)
+### Steps:
+1. Clone/download this repository and extract it.
+2. Move the folder to `C:\xampp\htdocs\your-folder-name`
+3. Start Apache and MySQL using XAMPP Control Panel
+4. Go to [http://localhost/phpmyadmin](http://localhost/phpmyadmin) and:
+   - Create a new database named `library`
+   - Import the `.sql` file provided
+5. Open `config.php` and update DB credentials if needed
+6. Launch the site: `http://localhost/your-folder-name`
+7. Use credentials from the database (password: `Test@123` by default)
 
-***
+---
 
-![Admin Dashboard](Screenshots/admin_dashboard.png)
-***
+## 📸 Screenshots
 
-![Profile](Screenshots/profile.png)
+- 🔐 Login Page  
+- 📂 Admin Dashboard  
+- 📚 Add/Manage Books  
+- 🧑‍🎓 Add/Manage Students  
+- 🏷️ Manage Categories & Publications  
+- 🗓️ Issue/Return Book + Fine  
+- 📈 Report Section (Overdue/UserWise)
 
-***
+---
 
-![Add Book](Screenshots/add_book.png)
+## 📌 Note
 
-***
+This is a learning-based project that I have enhanced through hands-on work. I've focused on **understanding full-stack integration (HTML, CSS, PHP, MySQL)** and practicing features common in real-world systems like user roles, session handling, and report generation.
 
-![Manage Books](Screenshots/manage_books.png)
+---
 
-***
+Feel free to explore the code and contribute or fork if you'd like to build on top of it!
 
-![Add Category](Screenshots/add_category.png)
-
-***
-
-![Manage Category](Screenshots/manage_categories.png)
-
-***
-
-![Add Publication](Screenshots/add_publication.png)
-
-***
-
-![Manage Publication](Screenshots/manage_publications.png)
-
-***
-
-![Change Password](Screenshots/change_password.png)
-
-***
-
-![Set Fine](Screenshots/set_fine.png)
-
-***
-
-![Issue Book](Screenshots/issue_book.png)
-
-***
-
-![Manage Issued Books](Screenshots/manage_issued_books.png)
-
-***
-
-![Manage Issued Books 2](Screenshots/manage_issued_books2.png)
-
-***
-
-![Manage Requested Books](Screenshots/manage_requested_books.png)
-
-***
-
-![Reistered Students](Screenshots/registered_students.png)
-
-***
-
-![Report](Screenshots/report.png)
-
-***
-
-![Overdue Report](Screenshots/overdue_report.png)
-
-***
-
-![UserWise Report](Screenshots/User_wise.png)
